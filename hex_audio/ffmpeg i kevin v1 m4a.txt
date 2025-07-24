@@ -1,0 +1,5 @@
+ffmpeg -i kevin_v1.m4a -ar 8000 -ac 1 -f u8  kevin_v1.raw
+xxd -i kevin_v1.raw > kevin_v1.h
+
+ffmpeg -i kevin_v2.m4a -ar 8000 -ac 1 -f u8  kevin_v2.raw
+xxd -i kevin_v2.raw > kevin_v2.h
